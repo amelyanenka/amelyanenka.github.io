@@ -162,30 +162,38 @@
   height: 100%;
   position: relative;
   width: 100%;
-}
-
-.unishop {
-  background: url("../img/unishop-logo-desktop.png") no-repeat 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  display: block;
-  cursor: pointer;
-  height: 100%;
+  color: #555;
+  font-size: 46px;
+  line-height: 28px;
   text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.logo:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  margin-right: -0.25em;
-  vertical-align: middle;
+.logo[data-shop="unishop"]{
+  font-family: 'Aleo', sans-serif;
+  font-size: 46px;
+  letter-spacing: 0px;
 }
 
-.logo img {
-  display: inline-block;
-  vertical-align: middle;
+.logo[data-shop="twisters"]{
+  font-family: 'Oswald-Regular', sans-serif;
+  font-size: 46px;
+  letter-spacing: 10px;
+}
+
+.logo[data-shop="rockstars"]{
+  font-family: 'Nexa', sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: none;
+  font-size: 46px;
 }
 
 .my-info {
@@ -751,7 +759,6 @@ a {
 }
 
 .intro-link {
-  background: #fff;
   border: 3px solid #167c9a;
   color: #157c99;
   display: inline-block;
@@ -959,9 +966,12 @@ a {
   overflow: hidden;
   height: 100%;
   width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: contain;
 }
 
-.intro-slide.ladies {
+/* .intro-slide.ladies {
   background: url("../img/intro-ladies.png") no-repeat 0 50%;
 }
 
@@ -971,7 +981,7 @@ a {
 
 .intro-slide.kids {
   background: url("../img/intro-kids.jpg") no-repeat 0 50%;
-}
+} */
 
 .text-part {
   float: right;

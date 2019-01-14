@@ -1,5 +1,20 @@
 $(document).ready(function(){
 
+	$('.tab').on( "click", function() {
+		$('.tab').removeClass('is-active');
+		$( this ).addClass('is-active');
+		$('.logo').text($( this ).text());
+		$('.logo').attr('data-shop', $( this ).attr('data-shop'));
+		setBg($( this ).attr('data-shop'));
+	  });
+
+
+	function setBg(shop = 'unsihop'){
+		$('.ladies').css('background-image', `url('img/${shop}/intro-ladies.jpg')`);
+		$('.gentlemen').css('background-image', `url('img/${shop}/intro-gentlemen.jpg')`);
+		$('.kids').css('background-image', `url('img/${shop}/intro-kids.jpg')`);
+	}
+
 	var slideWidth = $('.intro-slide').width();
 	var slideAmount = $('.introslide-container').children();
 	var leftShift = slideWidth;

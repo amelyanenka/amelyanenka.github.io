@@ -16,17 +16,17 @@
             <div class='header-top'>
                 <div class='container'>
                     <nav class='tabs'>
-                        <a href='#' class='tab unishop is-active'>Unishop</a>
-                        <a href='#' class='tab twister'>Twisters</a>
-                        <a href='#' class='tab rockstar'>Rock Star's</a>
+                        <a href='#' class='tab unishop is-active' data-shop="unishop">Unishop</a>
+                        <a href='#' class='tab twister' data-shop="twisters">Twisters</a>
+                        <a href='#' class='tab rockstar' data-shop="rockstars">Rock Star's</a>
                     </nav>
                     <a href='#' class='super-stuff'>Super New Stuff is here!!</a>
                 </div>
             </div>
             <div class='clearfix'></div>
-            <div class='header-main container unishop'>
+            <div class='header-main container'>
                 <div class='hm-wrapper'>
-                    <a class='logo unishop-logo' href=" https://amelyanenka.github.io"></a>
+                    <a href="https://amelyanenka.github.io" class="logo" data-shop="unishop">Unishop</a>
                 </div>
             </div>
             <nav class='header-nav'>
@@ -91,35 +91,34 @@
         <section class='intro-wrapper cat'>
             <div class='intro'>
                 <div class='introslide-container'>
-                    <div class='intro-slide ladies' data-color="#f6f6f6">
+                    <div class='intro-slide ladies' style="background-image: url('img/unishop/intro-ladies.jpg')" data-color="#f6f6f6">
                         <div class='text-part'>
                             <div class='text-part-wrap'>
                                 <h1>Apparel for Ladies ...</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
                                     massa velit, eu laoreet massa. Sed ac orci libero, eu dignissim enim.</p>
-                                <a href='#' class='intro-link'>View Collection</a>
+                                <a href='#ladies-slider' class='intro-link'>View Collection</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class='intro-slide gentlemen' data-color="#000">
+                    <div class='intro-slide gentlemen' style="background-image: url('img/unishop/intro-gentlemen.jpg')" data-color="#000">
                         <div class='text-part'>
                             <div class='text-part-wrap'>
                                 <h1>... for Gentlemen ...</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
                                     massa velit, eu laoreet massa. Sed ac orci libero, eu dignissim enim.</p>
-                                <a href='#' class='intro-link'>View Collection</a>
+                                <a href='#gents-slider' class='intro-link'>View Collection</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class='intro-slide kids' data-color="#fff">
+                    <div class='intro-slide kids' style="background-image: url('img/unishop/intro-kids.jpg')" data-color="#fff">
                         <div class='text-part'>
                             <div class='text-part-wrap'>
                                 <h1>... and for Kids</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae
                                     massa velit, eu laoreet massa. Sed ac orci libero, eu dignissim enim.</p>
-                                <a href='#' class='intro-link'>View Collection</a>
                             </div>
                         </div>
                     </div>
@@ -166,7 +165,7 @@
             </div>
         </section>
         <section class='sliders'>
-            <section class='sliders-wrapper'>
+            <section class='sliders-wrapper' id="ladies-slider">
                 <div class='prodslider popular'>
                     <div class='container'>
                         <div class='prodslide-title'>
@@ -339,7 +338,7 @@
                     </div>
                 </div>
             </section>
-            <section class='sliders-wrapper'>
+            <section class='sliders-wrapper' id="gents-slider">
                 <div class='prodslider popular'>
                     <div class='container'>
                         <div class='prodslide-title'>
